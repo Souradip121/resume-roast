@@ -1,0 +1,68 @@
+KABIR MEHTA
+kabir.mehta.dev@example.com | +91 98765 43210 | Pune, Maharashtra
+linkedin.com/in/kabir-mehta-example | github.com/kabir-example
+
+CAREER OBJECTIVE
+To obtain a challenging position in a reputed organization where I can utilize my skills and knowledge for the growth of the organization as well as myself. Hardworking team player and quick learner.
+
+EDUCATION
+B.Tech in Computer Science and Engineering, Sunrise Institute of Technology, Pune (2023 - 2027)
+CGPA: 7.8 / 10 (till 5th semester)
+Class XII (HSC), Maharashtra State Board, 2023 - 84.2%
+Class X (SSC), Maharashtra State Board, 2021 - 91.6%
+
+TECHNICAL SKILLS
+Languages: C, C++, Java, Python, JavaScript, HTML, CSS
+Web: React, Node.js, Express, MongoDB, Bootstrap, jQuery
+Tools: MS Word, MS Excel, MS PowerPoint, VS Code, Git, Canva
+Proficient in MS Word. Basic knowledge of Machine Learning, Blockchain, Cloud Computing and Cyber Security.
+
+PROJECTS
+1. To-Do List App (HTML, CSS, JavaScript)
+- Made a to-do list app where user can add and delete tasks.
+- Worked as a team player with my friends.
+2. Task Manager (React)
+- Developed a task manager to manage tasks using React.
+3. Smart To-Do App (Python, Tkinter)
+- To-do app with a GUI. Tasks are saved in a text file.
+4. To-Do List with Login (MERN Stack)
+- Full stack to-do list with login and signup.
+- Good team player, coordinated with team members.
+5. Campus Lost & Found Portal (Node.js, MongoDB)
+- Built in 24 hours at the college hackathon. Won 1st prize out of 46 teams. 300+ students used it in the first week.
+
+INTERNSHIP
+Web Development Intern, BrightLeaf Softech (virtual), June 2025 - July 2025
+- Worked on various tasks given by the mentor.
+- Learned a lot about web development and team work. Team player.
+
+CERTIFICATIONS
+- Python for Everybody (online course)
+- Introduction to HTML (online course)
+- Introduction to CSS (online course)
+- JavaScript Basics (online course)
+- Cyber Security Awareness Webinar (participation)
+- Blockchain Fundamentals Webinar (participation)
+
+STRENGTHS
+Team player, hardworking, honest, punctual, positive attitude, good communication skills.
+
+EXTRA-CURRICULAR ACTIVITIES
+- Volunteer at college tech fest (team player).
+- Member of college coding club.
+
+HOBBIES
+Listening to music, travelling, watching movies, surfing the internet.
+
+PERSONAL DETAILS
+Father's Name: Rajesh Mehta
+Date of Birth: 14/02/2005
+Gender: Male
+Marital Status: Single
+Languages Known: English, Hindi, Marathi
+
+DECLARATION
+I hereby declare that the above information is true to the best of my knowledge and belief.
+
+Place: Pune
+Kabir Mehta

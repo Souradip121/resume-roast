@@ -1,0 +1,5 @@
+*.png binary
+*.pdf binary
+*.woff2 binary
+*.mjs text eol=lf
+*.js text eol=lf

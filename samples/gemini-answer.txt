@@ -1,0 +1,38 @@
+Gemini said
+
+```json
+{
+  "is_resume": true,
+  "heat": 4,
+  "roast": [
+    "The career objective 'To obtain a challenging position' sounds like it was copied straight from a 2004 template.",
+    "Listing 'MS Word', 'MS Excel', and 'MS PowerPoint' in technical skills tells me you are applying for a job in 1998.",
+    "Four different versions of a to-do list app proves your imagination stopped working after the tutorial video.",
+    "Including your father's name, marital status, and a formal declaration takes up prime real estate that should be about code."
+  ],
+  "score": 4.0,
+  "verdict": "A generic template stuffed with filler, buzzwords, and four to-do list apps.",
+  "fixes": [
+    {
+      "title": "Axe the objective and personal details",
+      "how": "Delete the Career Objective, Father's Name, Date of Birth, Gender, Marital Status, and Declaration. These take up valuable space and recruiters do not care about them. Before: 'Father's Name: Rajesh Mehta | Date of Birth: 14/02/2005'. After: [Removed entirely to make space for actual tech details]."
+    },
+    {
+      "title": "Kill the duplicate to-do apps",
+      "how": "You have four separate to-do list projects using HTML, React, Python, and MERN. Keep only the MERN stack project or the Hackathon winner, and delete the rest. Combine your strongest work into detailed bullet points showing metrics rather than vague summaries."
+    },
+    {
+      "title": "Clean up technical skills",
+      "how": "Remove office software like MS Word, Excel, and PowerPoint from your technical skills section, along with vague mentions of 'Basic knowledge of Machine Learning'. Before: 'Tools: MS Word, MS Excel, VS Code'. After: 'Tools: VS Code, Git, Postman'."
+    }
+  ],
+  "redact": [
+    "KABIR MEHTA",
+    "kabir.mehta.dev@example.com",
+    "+91 98765 43210",
+    "linkedin.com/in/kabir-mehta-example",
+    "github.com/kabir-example",
+    "Sunrise Institute of Technology"
+  ]
+}
+```

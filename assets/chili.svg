@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="256" height="256">
+<!-- Hand-drawn chilli for Resume Roast (authored SVG, no generated raster). -->
+<defs>
+  <clipPath id="pod-clip"><path d="M65 25C80 27 87 42 80 57 71 76 46 90 15 94.5c-5 .7-6.6-4-2.4-6.2C33.4 80 47 66 51.6 47 54.7 35 57.6 25.7 65 25Z"/></clipPath>
+  <radialGradient id="g-pod" cx=".62" cy=".3" r=".9"><stop offset="0" stop-color="#F24A2C"/><stop offset=".55" stop-color="#D3221B"/><stop offset="1" stop-color="#9E1410"/></radialGradient>
+  <linearGradient id="g-cap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CC447"/><stop offset="1" stop-color="#3F8A2A"/></linearGradient>
+</defs>
+    <path d="M73.5 23C73.6 14 78.4 7.5 88 5" fill="none" stroke="#2A120B" stroke-width="9.5" stroke-linecap="round"/>
+    <path d="M73.5 23C73.6 14 78.4 7.5 88 5" fill="none" stroke="#3F8A2A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M65 25C80 27 87 42 80 57 71 76 46 90 15 94.5c-5 .7-6.6-4-2.4-6.2C33.4 80 47 66 51.6 47 54.7 35 57.6 25.7 65 25Z" fill="url(#g-pod)"/>
+    <g clip-path="url(#pod-clip)">
+      <path d="M85 40C82 66 52 88 14 97l-4 6 80-20Z" fill="#9E1410" fill-opacity=".55"/>
+      <path d="M61 33C58.5 46 52 59 39.5 70.5" fill="none" stroke="#FFE6CF" stroke-opacity=".9" stroke-width="4.2" stroke-linecap="round"/>
+      <path d="M36 75.5 31.5 78.5" fill="none" stroke="#FFE6CF" stroke-opacity=".8" stroke-width="3.6" stroke-linecap="round"/>
+    </g>
+    <path d="M65 25C80 27 87 42 80 57 71 76 46 90 15 94.5c-5 .7-6.6-4-2.4-6.2C33.4 80 47 66 51.6 47 54.7 35 57.6 25.7 65 25Z" fill="none" stroke="#2A120B" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M56.5 29.5c1.4-8.8 13.6-13.8 23.4-9 5.3 2.6 5.4 9.4-.4 10.6-4.8 1-8.5-1.8-12-.2-4.6 2.2-11.6 2.6-11-1.4Z" fill="url(#g-cap)" stroke="#2A120B" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M63 24.5c3-3 8-4.5 12.5-3" fill="none" stroke="#D8F3B8" stroke-opacity=".8" stroke-width="2.2" stroke-linecap="round"/>
+  </svg>

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Resume Roast</title>
+<meta name="description" content="Don't send your resume to 100 companies. Let AI roast it first. Copy a prompt into ChatGPT, Gemini or Claude, or use your own API key. No server: your resume goes only to the AI you pick.">
+<meta name="theme-color" content="#C81E19">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://api.openai.com https://generativelanguage.googleapis.com https://api.anthropic.com; img-src 'self' data: blob:; style-src 'self'; font-src 'self'; script-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta property="og:title" content="Resume Roast">
+<meta property="og:description" content="Don't send your resume to 100 companies. Let AI roast it first.">
+<meta property="og:image" content="assets/og.png">
+<link rel="icon" href="assets/chili.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/ultra.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/zilla-slab-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script type="module" src="js/app.js"></script>
+</head>
+<body>
+<!--
+THESIS: The resume roast as a hot-sauce bottle label. The category ships a grey "AI resume analyser" dashboard with a score ring; this is a vintage red-and-yellow sauce label where the heat you pick is printed on the badge and the jokes land like stamped quotes.
+OWN-WORLD: Label red frame, butter-yellow banner with halftone dots, cream paper panel, fat Clarendon-style lettering (Ultra) with dark outlines, condensed label caps (Barlow Condensed), slab body (Zilla Slab), hand-drawn glossy chillies, starburst seals, flame tongues along the bottom edge, 2-3px ink outlines on everything.
+STORY: Pick a route (copy the prompt, or bring a key and a PDF), set the heat in chillies, watch the roast lines stamp in, read the score and the three fixes, share a card that hides your details.
+FIRST VIEWPORT: Arched "RESUME ROAST" banner flanked by two chillies with the heat starburst under it; "Pick how to run it" with the red "Copy prompt" card above the fold; the key card begins at the fold.
+FORM: Brief-pinned concept D "hot sauce label" (author's pick of five), no roll; code-led (author's answer), board as the critique reference.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <clipPath id="pod-clip"><path d="M65 25C80 27 87 42 80 57 71 76 46 90 15 94.5c-5 .7-6.6-4-2.4-6.2C33.4 80 47 66 51.6 47 54.7 35 57.6 25.7 65 25Z"/></clipPath>
+    <radialGradient id="g-pod" cx=".62" cy=".3" r=".9"><stop offset="0" stop-color="#F24A2C"/><stop offset=".55" stop-color="#D3221B"/><stop offset="1" stop-color="#9E1410"/></radialGradient>
+    <linearGradient id="g-cap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7CC447"/><stop offset="1" stop-color="#3F8A2A"/></linearGradient>
+    <radialGradient id="g-band" cx=".5" cy=".42" r=".7"><stop offset="0" stop-color="#FFF0A6"/><stop offset=".6" stop-color="#FFD54A"/><stop offset="1" stop-color="#F4B321"/></radialGradient>
+    <radialGradient id="g-burst" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#FFF1A0"/><stop offset=".7" stop-color="#FFD23F"/><stop offset="1" stop-color="#F6B623"/></radialGradient>
+    <pattern id="halftone" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.15" fill="#E8A21A" fill-opacity=".55"/></pattern>
+  </defs>
+  <symbol id="chili" viewBox="0 0 100 100">
+    <path d="M73.5 23C73.6 14 78.4 7.5 88 5" fill="none" stroke="#2A120B" stroke-width="9.5" stroke-linecap="round"/>
+    <path d="M73.5 23C73.6 14 78.4 7.5 88 5" fill="none" stroke="#3F8A2A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M65 25C80 27 87 42 80 57 71 76 46 90 15 94.5c-5 .7-6.6-4-2.4-6.2C33.4 80 47 66 51.6 47 54.7 35 57.6 25.7 65 25Z" fill="url(#g-pod)"/>
+    <g clip-path="url(#pod-clip)">
+      <path d="M85 40C82 66 52 88 14 97l-4 6 80-20Z" fill="#9E1410" fill-opacity=".55"/>
+      <path d="M61 33C58.5 46 52 59 39.5 70.5" fill="none" stroke="#FFE6CF" stroke-opacity=".9" stroke-width="4.2" stroke-linecap="round"/>
+      <path d="M36 75.5 31.5 78.5" fill="none" stroke="#FFE6CF" stroke-opacity=".8" stroke-width="3.6" stroke-linecap="round"/>
+    </g>
+    <path d="M65 25C80 27 87 42 80 57 71 76 46 90 15 94.5c-5 .7-6.6-4-2.4-6.2C33.4 80 47 66 51.6 47 54.7 35 57.6 25.7 65 25Z" fill="none" stroke="#2A120B" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M56.5 29.5c1.4-8.8 13.6-13.8 23.4-9 5.3 2.6 5.4 9.4-.4 10.6-4.8 1-8.5-1.8-12-.2-4.6 2.2-11.6 2.6-11-1.4Z" fill="url(#g-cap)" stroke="#2A120B" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M63 24.5c3-3 8-4.5 12.5-3" fill="none" stroke="#D8F3B8" stroke-opacity=".8" stroke-width="2.2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="burst" viewBox="0 0 100 100"><path d="M50.0 1.0 L57.1 9.6 L66.8 4.0 L70.5 14.5 L81.5 12.5 L81.4 23.6 L92.4 25.5 L88.5 36.0 L98.3 41.5 L91.0 50.0 L98.3 58.5 L88.5 64.0 L92.4 74.5 L81.4 76.4 L81.5 87.5 L70.5 85.5 L66.8 96.0 L57.1 90.4 L50.0 99.0 L42.9 90.4 L33.2 96.0 L29.5 85.5 L18.5 87.5 L18.6 76.4 L7.6 74.5 L11.5 64.0 L1.7 58.5 L9.0 50.0 L1.7 41.5 L11.5 36.0 L7.6 25.5 L18.6 23.6 L18.5 12.5 L29.5 14.5 L33.2 4.0 L42.9 9.6 Z"/></symbol>
+  <symbol id="seal" viewBox="0 0 100 100"><path d="M50.0 1.0 L55.7 6.9 L62.7 2.7 L66.6 9.8 L74.5 7.6 L76.5 15.5 L84.6 15.4 L84.5 23.5 L92.4 25.5 L90.2 33.4 L97.3 37.3 L93.1 44.3 L99.0 50.0 L93.1 55.7 L97.3 62.7 L90.2 66.6 L92.4 74.5 L84.5 76.5 L84.6 84.6 L76.5 84.5 L74.5 92.4 L66.6 90.2 L62.7 97.3 L55.7 93.1 L50.0 99.0 L44.3 93.1 L37.3 97.3 L33.4 90.2 L25.5 92.4 L23.5 84.5 L15.4 84.6 L15.5 76.5 L7.6 74.5 L9.8 66.6 L2.7 62.7 L6.9 55.7 L1.0 50.0 L6.9 44.3 L2.7 37.3 L9.8 33.4 L7.6 25.5 L15.5 23.5 L15.4 15.4 L23.5 15.5 L25.5 7.6 L33.4 9.8 L37.3 2.7 L44.3 6.9 Z"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="M12.0 2.0 L14.5 8.6 L21.5 8.9 L16.0 13.3 L17.9 20.1 L12.0 16.2 L6.1 20.1 L8.0 13.3 L2.5 8.9 L9.5 8.6 Z" fill="currentColor"/></symbol>
+
+  <!-- route-card illustrations: ink outline, label red and yellow -->
+  <symbol id="il-doc" viewBox="0 0 48 48">
+    <path d="M12 5h17l9 9v27a3 3 0 0 1-3 3H12a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3Z" fill="#D3221B" stroke="#2A120B" stroke-width="2.6" stroke-linejoin="round"/>
+    <path d="M15 11h11l6 6v19a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2V13a2 2 0 0 1 2-2Z" fill="#FFD54A" stroke="#2A120B" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M17 20h11M17 25h11M17 30h7" stroke="#2A120B" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="il-key" viewBox="0 0 48 48">
+    <circle cx="17" cy="17" r="11" fill="#FFD54A" stroke="#2A120B" stroke-width="2.6"/>
+    <circle cx="17" cy="17" r="4.2" fill="#FFF3CC" stroke="#2A120B" stroke-width="2.4"/>
+    <path d="m24.5 24.5 16 16M33 33l-4.5 4.5M38 38l-3.5 3.5" stroke="#2A120B" stroke-width="7.5" stroke-linecap="round"/>
+    <path d="m24.5 24.5 16 16M33 33l-4.5 4.5M38 38l-3.5 3.5" stroke="#D3221B" stroke-width="3.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="il-upload" viewBox="0 0 48 48">
+    <path d="M14 36h-2.5a9 9 0 0 1-1.4-17.9A13 13 0 0 1 35 15.4 10 10 0 0 1 36.5 36H34" fill="#FFF3CC" stroke="#D3221B" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 42V24m-7 7 7-7 7 7" fill="none" stroke="#2A120B" stroke-width="6.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 42V24m-7 7 7-7 7 7" fill="none" stroke="#FFD54A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <!-- UI icons: one stroke, 2.2, round -->
+  <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 5.5v-.6a2.4 2.4 0 0 0-2.4-2.4H5.9a2.4 2.4 0 0 0-2.4 2.4v7.2c0 1.3 1.1 2.4 2.4 2.4h.6"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 4.8 4.8L19.5 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="currentColor"><path d="M7 10.5V8a5 5 0 0 1 10 0v2.5h-2.4V8a2.6 2.6 0 0 0-5.2 0v2.5Z"/><rect x="4.5" y="10" width="15" height="11" rx="2.4"/></g></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></g></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5.7A9.8 9.8 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-2.6 3.4M6.4 6.9C3.9 8.6 2.5 12 2.5 12S6 18.5 12 18.5a9.5 9.5 0 0 0 4.6-1.2M9.9 9.9a3 3 0 0 0 4.2 4.2M3 3l18 18"/></g></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M6.5 2.5h7.2l5.8 5.8v11.2a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2Z"/><path d="M13.5 2.7v5.6h5.8M8 13h8M8 16.8h5.5" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7 7 17" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h14M13 6.5l5.5 5.5-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M14.5 5.5 8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 9.5H7a2.5 2.5 0 0 0-2.5 2.5v6.5A2.5 2.5 0 0 0 7 21h10a2.5 2.5 0 0 0 2.5-2.5V12A2.5 2.5 0 0 0 17 9.5h-1.5"/><path d="M12 14.5V3M8 6.8 12 3l4 3.8"/></g></symbol>
+  <symbol id="i-again" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.8 4.2v4.6h-4.6"/></g></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5v11M7.5 10.5 12 15l4.5-4.5M4.5 17.5v1A2.5 2.5 0 0 0 7 21h10a2.5 2.5 0 0 0 2.5-2.5v-1"/></g></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5"/><circle cx="12" cy="16.4" r=".7" fill="currentColor"/></g></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12.2 2.5c.6 3.4 4.8 5.6 5.6 10 .8 4.6-2.2 9-5.8 9s-6.8-3-6.2-7.4c.4-2.6 2-4 2.6-5.6.6 1.6 1.2 2.6 2.2 3.2.4-3.4.6-6.2 1.6-9.2Z" fill="currentColor"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M9 5.5H6.5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V15M13.5 4.5h6v6M19.5 4.5l-8 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-paste" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4.5" width="14" height="17" rx="2.4"/><path d="M9 4.5V3.6c0-.6.4-1.1 1-1.1h4c.6 0 1 .5 1 1.1v.9M9 11h6M9 15h4"/></g></symbol>
+</svg>
+
+<div class="backdrop" aria-hidden="true"></div>
+
+<div class="bottle">
+  <header class="label-head">
+    <button class="back" id="back" type="button" hidden aria-label="Back">
+      <svg aria-hidden="true"><use href="#i-back"/></svg>
+    </button>
+    <h1 class="sr-only">Resume Roast</h1>
+    <svg class="banner" viewBox="0 0 400 214" aria-hidden="true">
+      <path class="banner-red" d="M16 60C70 22 330 22 384 60v86c-40 22-108 36-184 46C124 182 56 168 16 146Z"/>
+      <path class="banner-yellow" d="M27 66C80 33 320 33 373 66v74c-38 19-102 32-173 41C129 172 65 159 27 140Z"/>
+      <path class="banner-dots" d="M27 66C80 33 320 33 373 66v74c-38 19-102 32-173 41C129 172 65 159 27 140Z"/>
+      <path class="banner-keyline" d="M35 71C86 40 314 40 365 71v65c-36 18-98 30-165 38C133 166 71 154 35 136Z"/>
+      <path id="arc-1" d="M84 110Q200 72 316 110" fill="none"/>
+      <path id="arc-2" d="M98 160Q200 132 302 160" fill="none"/>
+      <text class="lettering drop" dy="3"><textPath href="#arc-1" startOffset="50%" text-anchor="middle">RESUME</textPath></text>
+      <text class="lettering"><textPath href="#arc-1" startOffset="50%" text-anchor="middle">RESUME</textPath></text>
+      <text class="lettering l2 drop" dy="3"><textPath href="#arc-2" startOffset="50%" text-anchor="middle">ROAST</textPath></text>
+      <text class="lettering l2"><textPath href="#arc-2" startOffset="50%" text-anchor="middle">ROAST</textPath></text>
+      <use href="#star" class="b-star" x="82" y="134" width="15" height="15"/>
+      <use href="#star" class="b-star" x="303" y="134" width="15" height="15"/>
+      <use href="#chili" class="b-chili b-chili-l" x="2" y="56" width="94" height="94"/>
+      <g transform="translate(398 56) scale(-1 1)"><use href="#chili" class="b-chili b-chili-r" x="0" y="0" width="94" height="94"/></g>
+      <g class="heat-badge" id="heat-badge">
+        <use href="#seal" class="hb-ring" x="153" y="148" width="94" height="94"/>
+        <use href="#seal" class="hb-fill" x="159" y="154" width="82" height="82"/>
+        <text class="hb-text" x="200" y="190" text-anchor="middle"><tspan id="hb-1" x="200">EXTRA</tspan><tspan id="hb-2" x="200" dy="17">HOT</tspan></text>
+      </g>
+    </svg>
+  </header>
+
+  <main class="panel" id="app">
+
+    <!-- 1 · Pick how to run it -->
+    <section class="screen" id="screen-start" aria-labelledby="h-start">
+      <h2 class="screen-title" id="h-start" tabindex="-1"><svg aria-hidden="true"><use href="#star"/></svg>Pick how to run it<svg aria-hidden="true"><use href="#star"/></svg></h2>
+
+      <article class="route" id="route-prompt" aria-labelledby="h-prompt">
+        <div class="route-head">
+          <svg class="route-il" aria-hidden="true"><use href="#il-doc"/></svg>
+          <div>
+            <h3 id="h-prompt">Copy the prompt</h3>
+            <p>Paste it into ChatGPT, Gemini or Claude with your resume attached. Free, no key.</p>
+          </div>
+        </div>
+        <div class="heat-mini" role="radiogroup" aria-label="Heat for the copied prompt" id="heat-mini"></div>
+        <button class="btn btn-red" id="copy" type="button"><svg aria-hidden="true"><use href="#i-copy"/></svg><span class="label">Copy prompt</span></button>
+        <p class="status" id="copy-status" role="status" aria-live="polite"></p>
+        <div class="route-links">
+          <button class="link" id="prompt-toggle" type="button" aria-expanded="false" aria-controls="prompt-box">Read the prompt</button>
+          <button class="link" id="paste-toggle" type="button" aria-expanded="false" aria-controls="paste-box">Got the answer? Paste it here</button>
+        </div>
+        <div class="prompt-box" id="prompt-box" hidden><pre id="prompt-text" tabindex="0"></pre></div>
+        <div class="paste-box" id="paste-box" hidden>
+          <label class="field-label" for="answer">The AI’s whole answer</label>
+          <textarea id="answer" rows="5" spellcheck="false" autocomplete="off" placeholder='Paste everything it wrote, from { to }'></textarea>
+          <p class="note" id="answer-note" role="status" aria-live="polite"></p>
+          <button class="btn btn-yellow" id="show-answer" type="button"><svg aria-hidden="true"><use href="#i-flame"/></svg><span>Show my roast</span></button>
+        </div>
+      </article>
+
+      <div class="or" aria-hidden="true"><svg><use href="#seal"/></svg><span>OR</span></div>
+
+      <article class="route" id="route-key" aria-labelledby="h-key">
+        <div class="route-head">
+          <svg class="route-il" aria-hidden="true"><use href="#il-key"/></svg>
+          <div>
+            <h3 id="h-key">Use your own API key</h3>
+            <p>This site sends your resume straight to the AI you pick.</p>
+          </div>
+        </div>
+        <div class="providers" role="radiogroup" aria-label="AI provider">
+          <button class="prov" type="button" role="radio" data-provider="openai" aria-checked="false">OpenAI</button>
+          <button class="prov" type="button" role="radio" data-provider="gemini" aria-checked="false">Gemini</button>
+          <button class="prov" type="button" role="radio" data-provider="claude" aria-checked="true">Claude</button>
+        </div>
+        <div class="keyfield">
+          <input id="key" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="text" placeholder="sk-ant-…" aria-label="Claude API key" aria-describedby="key-note key-error">
+          <button class="eye" id="eye" type="button" aria-label="Show key" aria-pressed="false"><svg aria-hidden="true"><use href="#i-eye"/></svg></button>
+        </div>
+        <p class="lock" id="key-note"><svg aria-hidden="true"><use href="#i-lock"/></svg>Your key stays in this browser</p>
+        <p class="error-line" id="key-error" role="alert" hidden></p>
+        <div class="key-links">
+          <a class="link" id="get-key" href="https://platform.claude.com/settings/keys" target="_blank" rel="noopener noreferrer">Get a Claude key<svg aria-hidden="true"><use href="#i-out"/></svg></a>
+          <button class="link" id="model-toggle" type="button" aria-expanded="false" aria-controls="model-box">Model: <span id="model-name">claude-haiku-5-5</span></button>
+          <button class="link" id="forget" type="button" hidden>Forget key</button>
+        </div>
+        <div class="model-box" id="model-box" hidden>
+          <label class="field-label" for="model">Model id</label>
+          <input id="model" type="text" autocomplete="off" autocapitalize="off" spellcheck="false">
+        </div>
+      </article>
+
+      <article class="route" id="route-resume" aria-labelledby="h-resume">
+        <div class="route-head">
+          <svg class="route-il" aria-hidden="true"><use href="#il-upload"/></svg>
+          <div>
+            <h3 id="h-resume">Add your resume</h3>
+            <p>Read on your phone. Your email and phone number are swapped for [email] and [phone] before it’s sent.</p>
+          </div>
+        </div>
+        <label class="drop" id="drop">
+          <input id="file" type="file" accept="application/pdf,.pdf,text/plain,.txt,.md" class="sr-only">
+          <span class="drop-text"><strong>Drop your PDF here</strong> or tap to pick one<small>PDF or .txt, up to 10 MB</small></span>
+          <span class="filechip" id="filechip" hidden>
+            <svg aria-hidden="true"><use href="#i-file"/></svg>
+            <span class="filechip-name" id="filename"></span>
+            <button class="filechip-x" id="file-remove" type="button" aria-label="Remove this resume"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+          </span>
+        </label>
+        <p class="note" id="parse-note" role="status" aria-live="polite"></p>
+        <div class="route-links">
+          <button class="link" id="paste-text-toggle" type="button" aria-expanded="false" aria-controls="paste-text-box">Paste the text instead</button>
+          <button class="link" id="sample" type="button">Try a made-up resume</button>
+        </div>
+        <div class="paste-box" id="paste-text-box" hidden>
+          <label class="field-label" for="resume-text">Your resume’s text</label>
+          <textarea id="resume-text" rows="6" spellcheck="false" placeholder="Open your resume, select all, copy, paste here."></textarea>
+        </div>
+      </article>
+
+      <button class="btn btn-red btn-big" id="to-roast" type="button" aria-disabled="true"><span>Next: pick the heat</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <p class="sub-cta">Just looking? <button class="link" id="demo" type="button">See an example roast</button></p>
+    </section>
+
+    <!-- 2 · The roast -->
+    <section class="screen" id="screen-roast" aria-labelledby="h-roast" hidden>
+      <h2 class="screen-title" id="h-roast" tabindex="-1"><svg aria-hidden="true"><use href="#star"/></svg>The roast<svg aria-hidden="true"><use href="#star"/></svg></h2>
+
+      <div class="spice" id="spice">
+        <p class="spice-label" id="spice-label">Spice level</p>
+        <div class="spice-row" role="radiogroup" aria-labelledby="spice-label" id="spice-row"></div>
+        <p class="spice-count"><span id="spice-n">4</span> / 5 · <span id="spice-name">Extra hot</span></p>
+        <p class="spice-tone" id="spice-tone"></p>
+      </div>
+
+      <div class="ready" id="ready">
+        <p class="ready-file" id="ready-file"></p>
+        <button class="btn btn-red btn-big" id="roast" type="button"><svg aria-hidden="true"><use href="#i-flame"/></svg><span>Roast me</span></button>
+      </div>
+
+      <div class="cooking" id="cooking" hidden role="status" aria-live="polite">
+        <div class="cook-seal" aria-hidden="true"><svg class="cs-burst"><use href="#burst"/></svg><svg class="cs-chili"><use href="#chili"/></svg></div>
+        <p class="cook-line" id="cook-line">Reading your resume…</p>
+        <button class="link" id="cancel" type="button">Cancel</button>
+      </div>
+
+      <div class="oops" id="oops" hidden role="alert">
+        <p class="oops-head"><svg aria-hidden="true"><use href="#i-alert"/></svg>Didn’t cook</p>
+        <p id="oops-msg"></p>
+        <div class="oops-actions">
+          <button class="btn btn-red" id="retry" type="button"><svg aria-hidden="true"><use href="#i-again"/></svg><span>Try again</span></button>
+          <button class="btn btn-yellow" id="oops-back" type="button"><span id="oops-back-label">Change key</span></button>
+        </div>
+      </div>
+
+      <p class="ribbon" id="ribbon" hidden></p>
+      <ol class="quotes" id="quotes" aria-label="Roast lines"></ol>
+      <p class="by" id="by"></p>
+
+      <button class="btn btn-red btn-big" id="to-fixes" type="button" hidden><span>Fix these 3</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    </section>
+
+    <!-- 3 · Fix these 3 -->
+    <section class="screen" id="screen-fixes" aria-labelledby="h-fixes" hidden>
+      <h2 class="screen-title" id="h-fixes" tabindex="-1"><svg aria-hidden="true"><use href="#star"/></svg>Fix these 3<svg aria-hidden="true"><use href="#star"/></svg></h2>
+
+      <div class="score" id="score-box">
+        <svg class="rays" viewBox="0 0 320 160" aria-hidden="true">
+          <path d="M70 46 92 60M58 80h24M70 114l22-14M250 46l-22 14M262 80h-24M250 114l-22-14"/>
+        </svg>
+        <svg class="score-chili l" aria-hidden="true"><use href="#chili"/></svg>
+        <svg class="score-chili r" aria-hidden="true"><use href="#chili"/></svg>
+        <div class="score-burst">
+          <svg class="sb-ring" aria-hidden="true"><use href="#burst"/></svg>
+          <svg class="sb-fill" aria-hidden="true"><use href="#burst"/></svg>
+          <p class="score-num"><span class="sr-only">Score: </span><span id="score-n">0</span><span class="of">/10</span></p>
+        </div>
+      </div>
+      <p class="verdict" id="verdict"></p>
+
+      <ol class="fixes" id="fixes" aria-label="The three fixes"></ol>
+
+      <div class="end-actions">
+        <button class="btn btn-red btn-big" id="share" type="button"><svg aria-hidden="true"><use href="#i-share"/></svg><span>Share my roast</span></button>
+        <button class="btn btn-yellow btn-big" id="again" type="button"><svg aria-hidden="true"><use href="#i-again"/></svg><span>Roast again</span></button>
+      </div>
+    </section>
+    <div class="panel-flames" aria-hidden="true">
+      <svg viewBox="0 0 400 48" preserveAspectRatio="none"><path class="fl-back" d="M0 48 L0 44 C0.0 36.5 1.8 27.6 11.7 15.2 C13.5 28.3 21.1 35.5 24.8 44.0 C30.3 38.9 29.2 31.8 39.0 21.9 C40.9 32.4 51.8 38.1 55.5 44.0 C61.1 36.8 62.8 28.2 72.6 16.0 C74.5 28.8 82.6 35.8 86.3 44.0 C91.8 39.1 97.5 32.2 107.4 22.6 C109.2 32.8 113.4 38.3 117.1 44.0 C122.6 35.9 123.3 26.5 133.1 13.4 C135.0 27.2 144.2 34.8 147.8 44.0 C153.4 37.8 158.0 29.9 167.9 18.9 C169.7 30.5 174.9 36.9 178.6 44.0 C184.2 35.5 181.2 25.8 191.1 12.2 C192.9 26.5 205.7 34.4 209.4 44.0 C214.9 36.5 213.7 27.6 223.5 15.0 C225.4 28.2 236.5 35.5 240.2 44.0 C245.7 35.4 243.6 25.6 253.5 11.9 C255.3 26.3 267.2 34.3 270.9 44.0 C276.5 36.1 277.9 26.9 287.8 13.9 C289.6 27.5 298.0 35.0 301.7 44.0 C307.2 38.5 304.0 31.2 313.8 20.8 C315.7 31.7 328.8 37.7 332.5 44.0 C338.0 33.7 344.7 22.6 354.5 7.1 C356.4 23.5 359.5 32.5 363.2 44.0 C368.8 38.8 369.8 31.8 379.6 21.8 C381.5 32.3 390.3 38.1 394.0 44.0 C399.5 33.6 397.8 22.5 400.0 6.8 C400.0 23.3 400.0 32.3 400.0 44.0 L400 48 Z"/><path class="fl-front" d="M0 48 L0 44 C0.0 42.2 0.0 37.7 0.0 31.4 C0.0 38.0 8.0 41.7 11.0 44.0 C15.5 39.2 15.8 32.5 23.8 22.9 C25.3 33.0 33.0 38.5 36.0 44.0 C40.5 40.6 39.7 34.8 47.7 26.8 C49.2 35.3 58.0 39.9 61.0 44.0 C65.5 39.1 66.2 32.2 74.2 22.5 C75.7 32.7 83.0 38.3 86.0 44.0 C90.5 42.0 91.7 37.3 99.7 30.7 C101.2 37.6 108.0 41.4 111.0 44.0 C115.5 39.1 118.7 32.3 126.7 22.7 C128.2 32.8 133.0 38.4 136.0 44.0 C140.5 42.0 143.0 37.4 151.0 30.9 C152.5 37.8 158.0 41.5 161.0 44.0 C165.5 40.4 162.6 34.5 170.6 26.2 C172.1 34.9 183.0 39.7 186.0 44.0 C190.5 39.4 193.8 32.8 201.8 23.4 C203.3 33.2 208.0 38.7 211.0 44.0 C215.5 39.6 213.9 33.1 221.9 23.9 C223.4 33.5 233.0 38.8 236.0 44.0 C240.5 42.6 240.2 38.5 248.2 32.7 C249.7 38.8 258.0 42.2 261.0 44.0 C265.5 39.7 267.9 33.3 275.9 24.2 C277.4 33.7 283.0 39.0 286.0 44.0 C290.5 39.9 290.5 33.6 298.5 24.8 C300.0 34.1 308.0 39.2 311.0 44.0 C315.5 42.2 318.8 37.8 326.8 31.6 C328.3 38.1 333.0 41.8 336.0 44.0 C340.5 43.3 343.8 39.7 351.8 34.6 C353.3 39.9 358.0 42.9 361.0 44.0 C365.5 41.3 367.0 36.2 375.0 28.9 C376.5 36.5 383.0 40.7 386.0 44.0 C390.5 42.4 392.4 38.1 400.0 32.1 C400.0 38.5 400.0 42.0 400.0 44.0 L400 48 Z"/></svg>
+    </div>
+  </main>
+
+  <footer class="label-foot">
+    <svg class="foot-star" aria-hidden="true"><use href="#star"/></svg>
+    <p class="foot-note">No server. Your resume goes only to the AI you pick, never to us.</p>
+    <p class="foot-credit">Made by <a href="https://www.instagram.com/souradip.sh/" target="_blank" rel="noopener noreferrer">@souradip.sh</a> · <a href="https://github.com/Souradip121/resume-roast" target="_blank" rel="noopener noreferrer">Open source</a></p>
+  </footer>
+</div>
+
+<dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+  <div class="sheet-inner">
+    <div class="sheet-top">
+      <h2 id="sheet-title">Your roast card</h2>
+      <button class="sheet-x" id="sheet-close" type="button" aria-label="Close"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="sheet-frame" id="sheet-frame"></div>
+    <label class="optin">
+      <input type="checkbox" id="optin">
+      <span>Show my details on the card<small>Off: your name, email, phone and college are blacked out.</small></span>
+    </label>
+    <div class="sheet-actions">
+      <button class="btn btn-red" id="native-share" type="button" hidden><svg aria-hidden="true"><use href="#i-share"/></svg><span>Share</span></button>
+      <a class="btn btn-yellow" id="download" download="resume-roast.png" href="#"><svg aria-hidden="true"><use href="#i-download"/></svg><span>Save image</span></a>
+    </div>
+    <p class="sheet-note">Made on your phone. Nothing is uploaded.</p>
+  </div>
+</dialog>
+</body>
+</html>
