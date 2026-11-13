@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T11:08:51+00:00",
+  "title": "Design System: Resume Roast",
+  "extensions": {
+    "colorMeta": {
+      "red": {
+        "role": "primary",
+        "displayName": "Sauce Red",
+        "canonical": "oklch(55.7% 0.211 28.8)",
+        "tonalRamp": [
+          "#1F0000",
+          "#4D0001",
+          "#810002",
+          "#B90004",
+          "#E5382D",
+          "#FF7363",
+          "#FFB3A7",
+          "#FFE9E5"
+        ]
+      },
+      "red-label": {
+        "role": "primary",
+        "displayName": "Label Red",
+        "canonical": "oklch(53.5% 0.203 28.6)",
+        "tonalRamp": [
+          "#1F0000",
+          "#4D0001",
+          "#810003",
+          "#B90006",
+          "#E23E32",
+          "#FF7364",
+          "#FFB3A8",
+          "#FFE9E5"
+        ]
+      },
+      "red-deep": {
+        "role": "primary",
+        "displayName": "Dried Chilli",
+        "canonical": "oklch(44.8% 0.171 28.6)",
+        "tonalRamp": [
+          "#1F0000",
+          "#4D0001",
+          "#810002",
+          "#AD2820",
+          "#D54F42",
+          "#FE7464",
+          "#FFB3A8",
+          "#FFE9E5"
+        ]
+      },
+      "yellow": {
+        "role": "secondary",
+        "displayName": "Banner Yellow",
+        "canonical": "oklch(88.6% 0.157 91.7)",
+        "tonalRamp": [
+          "#100A00",
+          "#2F2400",
+          "#514000",
+          "#765E00",
+          "#9D7F00",
+          "#C7A100",
+          "#EEC534",
+          "#FFEEBB"
+        ]
+      },
+      "yellow-deep": {
+        "role": "secondary",
+        "displayName": "Turmeric",
+        "canonical": "oklch(80.7% 0.160 80.9)",
+        "tonalRamp": [
+          "#120900",
+          "#322200",
+          "#573D00",
+          "#7F5A00",
+          "#A87900",
+          "#D49900",
+          "#FEBC31",
+          "#FFECCC"
+        ]
+      },
+      "yellow-pale": {
+        "role": "secondary",
+        "displayName": "Pale Butter",
+        "canonical": "oklch(95.0% 0.082 95.6)",
+        "tonalRamp": [
+          "#0F0B00",
+          "#2D2400",
+          "#4F4100",
+          "#6F6124",
+          "#918246",
+          "#B4A569",
+          "#D9C98C",
+          "#FFEFB0"
+        ]
+      },
+      "green": {
+        "role": "tertiary",
+        "displayName": "Stem Green",
+        "canonical": "oklch(56.5% 0.151 139.6)",
+        "tonalRamp": [
+          "#021000",
+          "#092E00",
+          "#165000",
+          "#28740C",
+          "#4C9738",
+          "#6FBB5C",
+          "#93E180",
+          "#CDFFC1"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Smoked Ink",
+        "canonical": "oklch(21.6% 0.042 37.1)",
+        "tonalRamp": [
+          "#190401",
+          "#371D16",
+          "#563A32",
+          "#775950",
+          "#9A7A71",
+          "#BE9C93",
+          "#E3C0B6",
+          "#FFE9E3"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Tamarind",
+        "canonical": "oklch(37.0% 0.062 42.8)",
+        "tonalRamp": [
+          "#1A0400",
+          "#3D1909",
+          "#5E3626",
+          "#805645",
+          "#A37665",
+          "#C79986",
+          "#EDBDA9",
+          "#FFE9E1"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Label Cream",
+        "canonical": "oklch(96.4% 0.052 92.9)",
+        "tonalRamp": [
+          "#100B00",
+          "#2E2402",
+          "#4C4120",
+          "#6B613E",
+          "#8D825E",
+          "#B0A580",
+          "#D5C9A3",
+          "#FAEEC8"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card Stock",
+        "canonical": "oklch(98.1% 0.028 93.7)",
+        "tonalRamp": [
+          "#0F0B01",
+          "#2A2515",
+          "#474231",
+          "#66614F",
+          "#888270",
+          "#ABA592",
+          "#CFC9B5",
+          "#F5EFDA"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Fresh Paper",
+        "canonical": "oklch(99.3% 0.013 97.4)",
+        "tonalRamp": [
+          "#0D0B06",
+          "#27251E",
+          "#44423A",
+          "#636159",
+          "#84827A",
+          "#A7A59C",
+          "#CBC9C0",
+          "#F1EFE5"
+        ]
+      },
+      "butter": {
+        "role": "neutral",
+        "displayName": "Butter",
+        "canonical": "oklch(91.6% 0.093 94.4)",
+        "tonalRamp": [
+          "#0F0B00",
+          "#2E2400",
+          "#4F4100",
+          "#726013",
+          "#94813B",
+          "#B8A45E",
+          "#DDC982",
+          "#FFEFB3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The arched 'RESUME / ROAST' masthead lettering (46px for ROAST), SVG textPath, red with a 6px ink stroke under the fill and a 3px ink drop shade. Masthead and share card only."
+      },
+      "score": {
+        "displayName": "Score",
+        "purpose": "The count-up score on the burst, red with a 2px ink text stroke, tabular figures; the /10 at 22px."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Fix numbers in red circles (yellow); the heat count line at 19px in red."
+      },
+      "seal": {
+        "displayName": "Seal",
+        "purpose": "Words inside starbursts: the heat badge and the OR divider, in Pale Butter."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One screen title per screen, between two red stars; 27px under 360px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Route card titles; 25px sheet title, 21px drop zone title."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Every button label; 23px on big buttons, 19-20px in two-up rows and provider chips."
+      },
+      "label-ruled": {
+        "displayName": "Ruled Label",
+        "purpose": "Uppercase label between two red rules that names a control or state ('Spice level', 'Didn't cook')."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase form field labels in Dried Chilli; before/after tags at 12.5px, the ribbon at 15px."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Roast lines; the verdict and fix titles use the same bold slab at 19px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Sentences; route card leads at 15px in Tamarind."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Notes, status lines, the lock line, before/after text, footer copy."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Prompt preview only; 13.5px pasted answer, 15px model id, 16px key field."
+      }
+    },
+    "shadows": [
+      {
+        "name": "bottle-float",
+        "value": "0 30px 60px -24px rgb(110 50 0 / .45), 0 6px 14px -6px rgb(110 50 0 / .3)",
+        "purpose": "The desktop bottle on the butter backdrop (min-width 560px). The only cast shadow."
+      },
+      {
+        "name": "keyline-panel",
+        "value": "inset 0 0 0 5px var(--cream), inset 0 0 0 6.5px rgb(211 34 27 / .55)",
+        "purpose": "The cream panel's inner red rule."
+      },
+      {
+        "name": "keyline-cooking",
+        "value": "inset 0 0 0 4px var(--card), inset 0 0 0 6px var(--yellow-deep)",
+        "purpose": "The loading (cooking) card."
+      },
+      {
+        "name": "keyline-error",
+        "value": "inset 0 0 0 4px var(--card), inset 0 0 0 6px var(--red)",
+        "purpose": "The 'Didn't cook' error card."
+      },
+      {
+        "name": "keyline-back",
+        "value": "inset 0 0 0 3px var(--cream), inset 0 0 0 5px var(--red)",
+        "purpose": "The round back button."
+      },
+      {
+        "name": "chili-lip",
+        "value": "drop-shadow(0 1px 0 rgb(42 18 11 / .25))",
+        "purpose": "filter on heat picker chillies."
+      },
+      {
+        "name": "focus-halo",
+        "value": "outline: 3px solid var(--ink); outline-offset: 3px; box-shadow: 0 0 0 7px var(--yellow)",
+        "purpose": "Every keyboard-focused control."
+      },
+      {
+        "name": "invalid-ring",
+        "value": "0 0 0 3px rgb(211 34 27 / .25)",
+        "purpose": "Key field after a rejected key, with a Sauce Red border."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Every entrance and state change (--ease-out)."
+      },
+      {
+        "name": "screen-in",
+        "value": ".45s: opacity 0 to 1, translateY 10px to 0",
+        "purpose": "Screen change; the share sheet uses the same keyframes at .35s."
+      },
+      {
+        "name": "stamp",
+        "value": ".55s: scale 1.22 rotate -2.5deg, to .97 / .6deg, to 1.01, to rest; opacity 0 to 1 by 45%",
+        "purpose": "Roast quote cards (260ms stagger) and fix cards (450ms + 220ms stagger)."
+      },
+      {
+        "name": "badge-stamp",
+        "value": ".5s: scale 1.35 rotate -14deg, to .94 / 3deg, to rest",
+        "purpose": "Heat badge when the heat changes."
+      },
+      {
+        "name": "chili-pop",
+        "value": ".42s: scale .7, to 1.18 with counter-tilt, to 1",
+        "purpose": "A chilli lighting up in the heat picker."
+      },
+      {
+        "name": "burst-in",
+        "value": ".7s: scale .4 rotate -40deg opacity 0, to rest",
+        "purpose": "Score burst on the fixes screen."
+      },
+      {
+        "name": "count-up",
+        "value": "1000ms, ease-out quartic, requestAnimationFrame",
+        "purpose": "Score number counting from 0."
+      },
+      {
+        "name": "press",
+        "value": "translateY(2px) in .12s (buttons); 1px (chips, back button)",
+        "purpose": "Controls press down; they never stamp."
+      },
+      {
+        "name": "shiver",
+        "value": "1.6s ease-in-out infinite, rotate +/-3deg, translateY +/-1px",
+        "purpose": "Lit chillies at heat 5 only."
+      },
+      {
+        "name": "cooking",
+        "value": "burst spin 6s linear infinite; chilli sizzle .5s ease-in-out alternate",
+        "purpose": "Loading card while the roast runs."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all animation and transition durations .01ms, one iteration; scripted waits 0",
+        "purpose": "prefers-reduced-motion: reduce; the score shows its final value at once."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width: 360px",
+        "purpose": "Panel and route card side padding 12px, screen title 27px, picker chillies 50px (26px in the copy card)."
+      },
+      {
+        "name": "label-on-backdrop",
+        "value": "min-width: 560px",
+        "purpose": "Butter halftone backdrop; bottle gets a 3px ink border, 30px corners and the float shadow; body padding 28px 0 40px."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Red Button",
+      "kind": "button",
+      "refersTo": "button-red",
+      "description": "The step forward on every screen: Copy prompt, Next, Roast me, Fix these 3, Share my roast.",
+      "html": "<button class=\"ds-btn-red\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"21\" height=\"21\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"8.5\" y=\"8.5\" width=\"12\" height=\"12\" rx=\"2.5\"/><path d=\"M15.5 5.5v-.6a2.4 2.4 0 0 0-2.4-2.4H5.9a2.4 2.4 0 0 0-2.4 2.4v7.2c0 1.3 1.1 2.4 2.4 2.4h.6\"/></g></svg><span>Copy prompt</span></button>",
+      "css": ".ds-btn-red { display: inline-flex; align-items: center; justify-content: center; gap: 9px; width: 100%; min-height: 50px; padding: 0 18px; border: 2.5px solid var(--ink, #2A120B); border-radius: 12px; font: 800 21px/1 var(--label, 'Barlow Condensed', 'Arial Narrow', sans-serif); letter-spacing: .01em; cursor: pointer; transition: transform .12s cubic-bezier(.16, 1, .3, 1), background-color .15s; background-color: var(--red, #D3221B); color: var(--cream, #FFF3CC); } .ds-btn-red:hover { background-color: #E02A22; } .ds-btn-red:active { transform: translateY(2px); background-color: var(--red-deep, #9E1410); } .ds-btn-red:focus-visible { outline: 3px solid var(--ink, #2A120B); outline-offset: 3px; box-shadow: 0 0 0 7px var(--yellow, #FFD54A); }"
+    },
+    {
+      "name": "Yellow Button",
+      "kind": "button",
+      "refersTo": "button-yellow",
+      "description": "The alternate path: Show my roast, Roast again, Save image, Change key.",
+      "html": "<button class=\"ds-btn-yellow\" type=\"button\"><svg viewBox=\"0 0 24 24\" width=\"21\" height=\"21\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M19.5 12a7.5 7.5 0 1 1-2.2-5.3\"/><path d=\"M19.8 4.2v4.6h-4.6\"/></g></svg><span>Roast again</span></button>",
+      "css": ".ds-btn-yellow { display: inline-flex; align-items: center; justify-content: center; gap: 9px; width: 100%; min-height: 50px; padding: 0 18px; border: 2.5px solid var(--ink, #2A120B); border-radius: 12px; font: 800 21px/1 var(--label, 'Barlow Condensed', 'Arial Narrow', sans-serif); letter-spacing: .01em; cursor: pointer; transition: transform .12s cubic-bezier(.16, 1, .3, 1), background-color .15s; background-color: var(--yellow, #FFD54A); color: var(--ink, #2A120B); } .ds-btn-yellow:hover { background-color: #FFDC63; } .ds-btn-yellow:active { transform: translateY(2px); background-color: var(--yellow-deep, #F4B321); } .ds-btn-yellow:focus-visible { outline: 3px solid var(--ink, #2A120B); outline-offset: 3px; box-shadow: 0 0 0 7px var(--yellow, #FFD54A); }"
+    },
+    {
+      "name": "Provider Chips",
+      "kind": "chip",
+      "refersTo": "chip-provider",
+      "description": "Three equal pills naming the AI provider; plain names, never logos. Selected is Sauce Red.",
+      "html": "<div class=\"ds-providers\" role=\"radiogroup\" aria-label=\"AI provider\"><button class=\"ds-prov\" type=\"button\" role=\"radio\" aria-checked=\"false\">OpenAI</button><button class=\"ds-prov\" type=\"button\" role=\"radio\" aria-checked=\"false\">Gemini</button><button class=\"ds-prov\" type=\"button\" role=\"radio\" aria-checked=\"true\">Claude</button></div>",
+      "css": ".ds-providers { display: flex; gap: 8px; } .ds-prov { flex: 1; min-height: 44px; padding: 0 8px; border: 2.5px solid var(--ink, #2A120B); border-radius: 999px; background: var(--paper, #FFFDF3); color: var(--ink, #2A120B); font: 800 19px/1 var(--label, 'Barlow Condensed', 'Arial Narrow', sans-serif); letter-spacing: .01em; cursor: pointer; transition: background-color .2s, color .2s, transform .12s; } .ds-prov:hover { background: var(--yellow-pale, #FFEFB0); } .ds-prov[aria-checked='true'] { background: var(--red, #D3221B); color: var(--cream, #FFF3CC); } .ds-prov:active { transform: translateY(1px); } .ds-prov:focus-visible { outline: 3px solid var(--ink, #2A120B); outline-offset: 3px; box-shadow: 0 0 0 7px var(--yellow, #FFD54A); }"
+    },
+    {
+      "name": "Key Field",
+      "kind": "input",
+      "refersTo": "input-key",
+      "description": "Masked monospace key field with a show/hide eye and the lock line under it; turns red on a rejected key.",
+      "html": "<div class=\"ds-keyfield\"><input type=\"password\" value=\"sk-ant-0000000000\" aria-label=\"API key\"><button class=\"ds-eye\" type=\"button\" aria-label=\"Show key\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><g fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/></g></svg></button></div><p class=\"ds-lock\"><svg viewBox=\"0 0 24 24\" width=\"15\" height=\"15\" aria-hidden=\"true\"><g fill=\"currentColor\"><path d=\"M7 10.5V8a5 5 0 0 1 10 0v2.5h-2.4V8a2.6 2.6 0 0 0-5.2 0v2.5Z\"/><rect x=\"4.5\" y=\"10\" width=\"15\" height=\"11\" rx=\"2.4\"/></g></svg>Your key stays in this browser</p>",
+      "css": ".ds-keyfield { position: relative; } .ds-keyfield input { display: block; width: 100%; box-sizing: border-box; min-height: 52px; padding: 0 54px 0 14px; background: var(--paper, #FFFDF3); color: var(--ink, #2A120B); border: 2.5px solid var(--ink, #2A120B); border-radius: 12px; font: 500 16px/1 var(--mono, ui-monospace, 'SFMono-Regular', 'Cascadia Mono', Consolas, monospace); letter-spacing: .05em; } .ds-keyfield input:focus-visible { outline: 3px solid var(--ink, #2A120B); outline-offset: 3px; box-shadow: 0 0 0 7px var(--yellow, #FFD54A); } .ds-keyfield.invalid input { border-color: var(--red, #D3221B); box-shadow: 0 0 0 3px rgb(211 34 27 / .25); } .ds-eye { position: absolute; right: 5px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; display: grid; place-items: center; border: 0; border-radius: 10px; background: none; color: var(--ink, #2A120B); cursor: pointer; } .ds-eye:focus-visible { outline: 3px solid var(--ink, #2A120B); outline-offset: 3px; box-shadow: 0 0 0 7px var(--yellow, #FFD54A); } .ds-lock { display: flex; align-items: center; gap: 7px; margin: 9px 0 0; font: 500 14.5px/1.4 var(--body, 'Zilla Slab', Rockwell, Georgia, serif); color: var(--ink, #2A120B); }"
+    },
+    {
+      "name": "Route Card",
+      "kind": "card",
+      "refersTo": "card-route",
+      "description": "Card Stock card with a 46px label illustration beside a condensed title and a Tamarind lead, then its controls.",
+      "html": "<article class=\"ds-route\"><div class=\"ds-route-head\"><svg class=\"ds-route-il\" viewBox=\"0 0 48 48\" width=\"46\" height=\"46\" aria-hidden=\"true\"><path d=\"M12 5h17l9 9v27a3 3 0 0 1-3 3H12a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3Z\" fill=\"#D3221B\" stroke=\"#2A120B\" stroke-width=\"2.6\" stroke-linejoin=\"round\"/><path d=\"M15 11h11l6 6v19a2 2 0 0 1-2 2H15a2 2 0 0 1-2-2V13a2 2 0 0 1 2-2Z\" fill=\"#FFD54A\" stroke=\"#2A120B\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M17 20h11M17 25h11M17 30h7\" stroke=\"#2A120B\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg><div><h3>Copy the prompt</h3><p>Paste it into ChatGPT, Gemini or Claude with your resume attached. Free, no key.</p></div></div><a class=\"ds-link\" href=\"#\">Read the prompt</a></article>",
+      "css": ".ds-route { padding: 15px 15px 16px; background: var(--card, #FFF9E4); color: var(--ink, #2A120B); border: 2.5px solid var(--ink, #2A120B); border-radius: 14px; } .ds-route-head { display: grid; grid-template-columns: 46px 1fr; gap: 12px; align-items: start; } .ds-route h3 { margin: 1px 0 2px; font: 800 23px/1.05 var(--label, 'Barlow Condensed', 'Arial Narrow', sans-serif); } .ds-route p { margin: 0; color: var(--ink-soft, #5B3424); font: 500 15px/1.35 var(--body, 'Zilla Slab', Rockwell, Georgia, serif); } .ds-link { display: inline-flex; margin-top: 10px; padding: 4px 0; color: var(--red-deep, #9E1410); font: 500 15px/1.3 var(--body, 'Zilla Slab', Rockwell, Georgia, serif); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; } .ds-link:hover { color: var(--red, #D3221B); } .ds-link:focus-visible { outline: 3px solid var(--ink, #2A120B); outline-offset: 3px; box-shadow: 0 0 0 7px var(--yellow, #FFD54A); border-radius: 6px; }"
+    },
+    {
+      "name": "Drop Zone",
+      "kind": "input",
+      "refersTo": "drop-zone",
+      "description": "Pale Butter well with a dashed ink border for the resume; drag-over goes yellow with a solid red border.",
+      "html": "<label class=\"ds-drop\"><input type=\"file\" accept=\".pdf,.txt\" class=\"ds-sr\"><span class=\"ds-drop-text\"><strong>Drop your PDF here</strong> or tap to pick one<small>PDF or .txt, up to 10 MB</small></span></label>",
+      "css": ".ds-drop { display: block; padding: 18px 14px; border: 2.5px dashed var(--ink, #2A120B); border-radius: 12px; background: var(--yellow-pale, #FFEFB0); text-align: center; cursor: pointer; transition: background-color .2s, border-color .2s, transform .2s cubic-bezier(.16, 1, .3, 1); } .ds-drop:hover { background: #FFE89A; } .ds-drop.over { background: var(--yellow, #FFD54A); border-style: solid; border-color: var(--red, #D3221B); transform: scale(1.015); } .ds-drop:focus-within { outline: 3px solid var(--ink, #2A120B); outline-offset: 3px; } .ds-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } .ds-drop-text { display: block; font: 500 15px/1.4 var(--body, 'Zilla Slab', Rockwell, Georgia, serif); color: var(--ink-soft, #5B3424); } .ds-drop-text strong { display: block; margin-bottom: 2px; font: 800 21px/1.1 var(--label, 'Barlow Condensed', 'Arial Narrow', sans-serif); color: var(--ink, #2A120B); } .ds-drop-text small { display: block; margin-top: 4px; font-size: 13.5px; }"
+    },
+    {
+      "name": "Quote Card",
+      "kind": "custom",
+      "refersTo": "card-quote",
+      "description": "A roast line stamped onto a Card Stock card beside a red seal with a yellow burst and a chilli; cards alternate a slight tilt.",
+      "html": "<ol class=\"ds-quotes\"><li class=\"ds-quote\"><svg class=\"ds-q-seal\" viewBox=\"0 0 100 100\" width=\"52\" height=\"52\" aria-hidden=\"true\"><defs><clipPath id=\"ds-pod-clip\"><path d=\"M65 25C80 27 87 42 80 57 71 76 46 90 15 94.5c-5 .7-6.6-4-2.4-6.2C33.4 80 47 66 51.6 47 54.7 35 57.6 25.7 65 25Z\"/></clipPath><radialGradient id=\"ds-pod\" cx=\".62\" cy=\".3\" r=\".9\"><stop offset=\"0\" stop-color=\"#F24A2C\"/><stop offset=\".55\" stop-color=\"#D3221B\"/><stop offset=\"1\" stop-color=\"#9E1410\"/></radialGradient><radialGradient id=\"ds-burst\" cx=\".5\" cy=\".45\" r=\".6\"><stop offset=\"0\" stop-color=\"#FFF1A0\"/><stop offset=\".7\" stop-color=\"#FFD23F\"/><stop offset=\"1\" stop-color=\"#F6B623\"/></radialGradient></defs><path d=\"M50.0 1.0 L55.7 6.9 L62.7 2.7 L66.6 9.8 L74.5 7.6 L76.5 15.5 L84.6 15.4 L84.5 23.5 L92.4 25.5 L90.2 33.4 L97.3 37.3 L93.1 44.3 L99.0 50.0 L93.1 55.7 L97.3 62.7 L90.2 66.6 L92.4 74.5 L84.5 76.5 L84.6 84.6 L76.5 84.5 L74.5 92.4 L66.6 90.2 L62.7 97.3 L55.7 93.1 L50.0 99.0 L44.3 93.1 L37.3 97.3 L33.4 90.2 L25.5 92.4 L23.5 84.5 L15.4 84.6 L15.5 76.5 L7.6 74.5 L9.8 66.6 L2.7 62.7 L6.9 55.7 L1.0 50.0 L6.9 44.3 L2.7 37.3 L9.8 33.4 L7.6 25.5 L15.5 23.5 L15.4 15.4 L23.5 15.5 L25.5 7.6 L33.4 9.8 L37.3 2.7 L44.3 6.9 Z\" fill=\"#D3221B\" stroke=\"#2A120B\" stroke-width=\"6.7\" stroke-linejoin=\"round\"/><g transform=\"translate(11.5 11.5) scale(.77)\"><path d=\"M50.0 1.0 L57.1 9.6 L66.8 4.0 L70.5 14.5 L81.5 12.5 L81.4 23.6 L92.4 25.5 L88.5 36.0 L98.3 41.5 L91.0 50.0 L98.3 58.5 L88.5 64.0 L92.4 74.5 L81.4 76.4 L81.5 87.5 L70.5 85.5 L66.8 96.0 L57.1 90.4 L50.0 99.0 L42.9 90.4 L33.2 96.0 L29.5 85.5 L18.5 87.5 L18.6 76.4 L7.6 74.5 L11.5 64.0 L1.7 58.5 L9.0 50.0 L1.7 41.5 L11.5 36.0 L7.6 25.5 L18.6 23.6 L18.5 12.5 L29.5 14.5 L33.2 4.0 L42.9 9.6 Z\" fill=\"url(#ds-burst)\" stroke=\"#2A120B\" stroke-width=\"6.2\" stroke-linejoin=\"round\"/></g><g transform=\"translate(25 25) scale(.5) rotate(8 50 50)\"><path d=\"M73.5 23C73.6 14 78.4 7.5 88 5\" fill=\"none\" stroke=\"#2A120B\" stroke-width=\"9.5\" stroke-linecap=\"round\"/><path d=\"M73.5 23C73.6 14 78.4 7.5 88 5\" fill=\"none\" stroke=\"#3F8A2A\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M65 25C80 27 87 42 80 57 71 76 46 90 15 94.5c-5 .7-6.6-4-2.4-6.2C33.4 80 47 66 51.6 47 54.7 35 57.6 25.7 65 25Z\" fill=\"url(#ds-pod)\"/><g clip-path=\"url(#ds-pod-clip)\"><path d=\"M85 40C82 66 52 88 14 97l-4 6 80-20Z\" fill=\"#9E1410\" fill-opacity=\".55\"/><path d=\"M61 33C58.5 46 52 59 39.5 70.5\" fill=\"none\" stroke=\"#FFE6CF\" stroke-opacity=\".9\" stroke-width=\"4.2\" stroke-linecap=\"round\"/></g><path d=\"M65 25C80 27 87 42 80 57 71 76 46 90 15 94.5c-5 .7-6.6-4-2.4-6.2C33.4 80 47 66 51.6 47 54.7 35 57.6 25.7 65 25Z\" fill=\"none\" stroke=\"#2A120B\" stroke-width=\"3.4\" stroke-linejoin=\"round\"/><path d=\"M56.5 29.5c1.4-8.8 13.6-13.8 23.4-9 5.3 2.6 5.4 9.4-.4 10.6-4.8 1-8.5-1.8-12-.2-4.6 2.2-11.6 2.6-11-1.4Z\" fill=\"#3F8A2A\" stroke=\"#2A120B\" stroke-width=\"3\" stroke-linejoin=\"round\"/></g></svg><p class=\"ds-q-text\">5 projects. 4 of them are to-do apps.</p></li></ol>",
+      "css": ".ds-quotes { list-style: none; margin: 0; padding: 0; } .ds-quote { display: grid; grid-template-columns: 52px 1fr; gap: 12px; align-items: center; padding: 12px 14px 12px 11px; background: var(--card, #FFF9E4); border: 2.5px solid var(--ink, #2A120B); border-radius: 14px; rotate: -.7deg; animation: ds-stamp .55s cubic-bezier(.16, 1, .3, 1) both; } .ds-q-seal { rotate: 14deg; } .ds-q-text { margin: 0; font: 700 18px/1.28 var(--body, 'Zilla Slab', Rockwell, Georgia, serif); color: var(--ink, #2A120B); text-wrap: pretty; } @keyframes ds-stamp { 0% { opacity: 0; transform: scale(1.22) rotate(-2.5deg); } 45% { opacity: 1; transform: scale(.97) rotate(.6deg); } 70% { transform: scale(1.01) rotate(0deg); } 100% { opacity: 1; transform: none; } } @media (prefers-reduced-motion: reduce) { .ds-quote { animation: none; } }"
+    },
+    {
+      "name": "Fix Card",
+      "kind": "card",
+      "refersTo": "card-fix",
+      "description": "Numbered fix: red Ultra numeral circle, bold slab title, Tamarind how-line, ink Before and red After tags.",
+      "html": "<div class=\"ds-fix\"><span class=\"ds-fix-n\" aria-hidden=\"true\">2</span><div><p class=\"ds-fix-title\">Numbers, not adjectives</p><dl class=\"ds-fix-ba\"><dt>Before</dt><dd>Worked on various tasks given by the mentor</dd><dt class=\"after\">After</dt><dd>Built the signup and dashboard pages in React for 2 client sites</dd></dl></div></div>",
+      "css": ".ds-fix { display: grid; grid-template-columns: 44px 1fr; gap: 12px; align-items: start; padding: 12px 14px 13px 11px; background: var(--card, #FFF9E4); border: 2.5px solid var(--ink, #2A120B); border-radius: 14px; color: var(--ink, #2A120B); } .ds-fix-n { display: grid; place-items: center; width: 44px; height: 44px; box-sizing: border-box; border-radius: 50%; background: var(--red, #D3221B); border: 2.5px solid var(--ink, #2A120B); color: var(--yellow, #FFD54A); font: 400 21px/1 var(--display, 'Ultra', 'Rockwell Extra Bold', serif); } .ds-fix-title { margin: 1px 0 0; font: 700 19px/1.2 var(--body, 'Zilla Slab', Rockwell, Georgia, serif); } .ds-fix-ba { display: grid; grid-template-columns: auto 1fr; gap: 6px 8px; align-items: baseline; margin: 8px 0 0; font: 500 14.5px/1.38 var(--body, 'Zilla Slab', Rockwell, Georgia, serif); } .ds-fix-ba dt { padding: 3px 6px 2px; border-radius: 5px; background: var(--ink, #2A120B); color: var(--cream, #FFF3CC); font: 800 12.5px/1 var(--label, 'Barlow Condensed', 'Arial Narrow', sans-serif); letter-spacing: .1em; text-transform: uppercase; } .ds-fix-ba dt.after { background: var(--red, #D3221B); } .ds-fix-ba dd { margin: 0; } .ds-fix-ba dd:first-of-type { color: var(--ink-soft, #5B3424); text-decoration: line-through; text-decoration-color: rgb(211 34 27 / .7); text-decoration-thickness: 1.5px; }"
+    },
+    {
+      "name": "Ruled Label",
+      "kind": "custom",
+      "refersTo": "label-ruled",
+      "description": "Centred uppercase label between two red rules, naming a control or a state ('Spice level', 'Didn't cook').",
+      "html": "<p class=\"ds-ruled\">Spice level</p>",
+      "css": ".ds-ruled { display: flex; align-items: center; gap: 12px; margin: 0; font: 800 18px/1 var(--label, 'Barlow Condensed', 'Arial Narrow', sans-serif); letter-spacing: .16em; text-transform: uppercase; color: var(--red, #D3221B); } .ds-ruled::before, .ds-ruled::after { content: ''; flex: 1; height: 2.5px; background: var(--red, #D3221B); border-radius: 2px; }"
+    },
+    {
+      "name": "Back Button",
+      "kind": "nav",
+      "refersTo": "back-button",
+      "description": "Round cream back button with a red inner keyline, pinned in the banner's top-left from screen 2 on.",
+      "html": "<button class=\"ds-back\" type=\"button\" aria-label=\"Back\"><svg viewBox=\"0 0 24 24\" width=\"24\" height=\"24\" aria-hidden=\"true\"><path d=\"M14.5 5.5 8 12l6.5 6.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
+      "css": ".ds-back { width: 44px; height: 44px; display: grid; place-items: center; padding: 0; border-radius: 50%; border: 2.5px solid var(--ink, #2A120B); background: var(--cream, #FFF3CC); color: var(--ink, #2A120B); box-shadow: inset 0 0 0 3px var(--cream, #FFF3CC), inset 0 0 0 5px var(--red, #D3221B); cursor: pointer; } .ds-back:active { transform: translateY(1px); } .ds-back:focus-visible { outline: 3px solid var(--ink, #2A120B); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Vintage Sauce Label",
+    "overview": "The whole app is one hot sauce bottle label. A label-red ground runs the full height of the phone; an arched butter-yellow banner with halftone dots carries fat outlined lettering flanked by two glossy chillies; a cream paper panel hangs under it with a starburst heat badge pinned across its top edge and a row of flame tongues burning along its bottom edge. Every screen is a different panel on the same label: the route cards, the heat picker, the stamped roast lines, the score burst and the three fixes. The share card is the same label redrawn on a 1080 x 1920 canvas with the same palette object and the same banner, seal, burst, star and flame paths.\n\nThe material is printed paper and ink. Depth comes from 2.5px ink outlines and inset double keylines, not from shadows; colour comes from two sauces, red and yellow, on warm cream, with brown-black ink instead of grey. Things that are a verdict (the heat, the score, each roast line) sit on starbursts and seals and arrive with a stamp; things you operate (route cards, fields, buttons) stay square, outlined and still. Density is phone-first and generous: one 460px column, 44px minimum targets, one screen title per screen.\n\nThe category look this rejects is the grey \"AI resume analyser\" dashboard with a score ring. The label is cheeky and loud, but every sentence is set in a readable slab serif at 13.5px or larger, and red text below 18px moves to the deeper red so it stays legible on cream.",
+    "keyCharacteristics": [
+      "Label red frame, butter-yellow banner, cream paper panel, flame-tongue bottom edge.",
+      "Ink outlines on everything: 2.5px on cards, buttons, fields and chips; 3px on the panel, sheet and desktop bottle.",
+      "Three typefaces with fixed jobs: Ultra lettering, Barlow Condensed label caps and titles, Zilla Slab sentences.",
+      "Starbursts and seals carry heat, score and roast lines; numbered circles carry the fixes.",
+      "Results stamp in; controls press down 1-2px; reduced motion removes all of it.",
+      "Warm neutrals only: no grey, no blue."
+    ],
+    "rules": [
+      {
+        "name": "The Two Sauces Rule",
+        "body": "Red and yellow are the only colours with jobs. Green is limited to stems and the \"done\" state, and the neutrals are warm browns and creams; nothing on the label is grey or blue, and an unlit chilli is desaturated to sepia, not grey.",
+        "section": "colors"
+      },
+      {
+        "name": "The Small Red Rule",
+        "body": "Sauce Red text appears only at 18px and up (ruled labels, the heat count, the score). Resting red text below 18px (links, field labels, errors) uses Dried Chilli, which holds 7.4:1 on cream.",
+        "section": "colors"
+      },
+      {
+        "name": "The Text On Red Rule",
+        "body": "Text on Sauce Red is Label Cream (4.7:1) or Pale Butter in Ultra (4.5:1). Banner Yellow on red is reserved for the Ultra fix numerals at 21px (3.7:1) and never carries a sentence.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Voices Rule",
+        "body": "Ultra prints names and numbers, never a sentence. Barlow Condensed prints titles, buttons and caps labels, never a paragraph. Every sentence, including roast lines and the verdict, is Zilla Slab.",
+        "section": "typography"
+      },
+      {
+        "name": "The Outlined Lettering Rule",
+        "body": "The masthead lettering and the score are Sauce Red Ultra with an ink outline painted under the fill (paint-order: stroke). Ultra used for seal words, fix numerals and the heat count is flat: Pale Butter or Banner Yellow on a red seal, or Sauce Red on cream.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Bottle Rule",
+        "body": "Everything lives in the 460px label column. Wider screens get the butter backdrop around the bottle, never a wider bottle or a second column.",
+        "section": "layout"
+      },
+      {
+        "name": "The Ink Line Rule",
+        "body": "Every card, button, field, chip, seal and frame carries an ink outline: 2.5px on components (the `--line` value), 3px on the panel, sheet and desktop bottle, 2px on textareas, the file chip and the error line. A surface without an outline is not part of the label.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Double Keyline Rule",
+        "body": "Containers that mark a moment (the panel, the cooking card, the error card, the back button) get an inset double keyline; ordinary cards do not.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Starburst Rule",
+        "body": "Heat, score and roast lines sit on seals and bursts; ordered fixes sit in plain red circles. A seal never wraps a control.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Hand-Placed Tilt Rule",
+        "body": "Stamped and illustrated things are slightly off-square: roast quote cards alternate -0.7deg and 0.6deg, their seals turn 14deg or -10deg, picker chillies tilt -6deg and 5deg, the score chillies lean at 62deg. Route cards, fix cards, fields and buttons stay square.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do outline every card, button, field, chip and seal in Smoked Ink (#2A120B): 2.5px on components, 3px on the panel, the sheet and the desktop bottle.",
+      "Do keep sentences in Zilla Slab at 13.5px or larger, in Smoked Ink or Tamarind on cream surfaces.",
+      "Do put text on Sauce Red in Label Cream (4.7:1) or, in Ultra, Pale Butter; use Dried Chilli (#9E1410) for any red text under 18px.",
+      "Do put heat, score and roast lines on seals and bursts, and let results stamp in with the shared ease-out curve.",
+      "Do use dashed ink borders only for places that receive something: the drop zone, the heat readout, the prompt preview.",
+      "Do mark example content with the ink ribbon (\"Example: a made-up resume\") on screen and on the share card.",
+      "Do keep every tap target at 44px or more and keep the 3px ink outline plus 7px yellow halo for keyboard focus.",
+      "Do redraw the share card from the same palette, fonts and SVG paths as the page."
+    ],
+    "donts": [
+      "Don't use grey or blue anywhere on the label; neutrals are warm browns and creams, and an unlit chilli goes sepia.",
+      "Don't cast shadows from cards, buttons or chips; depth is the ink outline and the inset double keyline. The bottle float on wide screens is the only cast shadow.",
+      "Don't set a sentence in Ultra or Barlow Condensed, or a name or number meant to shout in Zilla Slab.",
+      "Don't set the masthead lettering or the score as flat red Ultra without its ink outline.",
+      "Don't show provider logos; providers are plain names on chips.",
+      "Don't widen the 460px label column or add a second column on large screens.",
+      "Don't tilt or stamp controls; tilt and stamps belong to results and illustrations.",
+      "Don't use Banner Yellow text on red for anything but the 21px Ultra fix numerals."
+    ]
+  }
+}
